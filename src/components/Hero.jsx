@@ -6,7 +6,7 @@ function Hero() {
       <div className="md:flex">
         <div className="flex-1">
           <img
-            src="/public/images/hero-img.png"
+            src="/images/hero-img.png"
             alt="Hero image"
             className="w-full h-full"
           />
