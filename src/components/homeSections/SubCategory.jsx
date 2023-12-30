@@ -4,7 +4,7 @@ export const SubCategory = () => {
   return (
     <div>
       <div className="flex  justify-center items-center space-x-1 mt-20">
-        <div className="md:flex  md:space-x-5 mb-5">
+        <div className="md:flex  md:space-x-5 mb-5 ">
           <div>
             <div className="relative">
               <img src="/images/one.png" alt="" />
@@ -24,7 +24,7 @@ export const SubCategory = () => {
             </div>
           </div>
           <div>
-            <div className="relative mt-5">
+            <div className="relative mt-5 md:mt-0">
               <img src="images/two.png" alt="" />
               <div className="absolute bottom-10 left-10 items-center">
                 <h3 className="text-white font-semibold text-2xl">
@@ -47,7 +47,7 @@ export const SubCategory = () => {
       <div className="flex justify-center items-center  ">
         <div className="md:flex  md:space-x-5 mb-5">
           <div>
-            <div className="relative mb-5">
+            <div className="relative ">
               <img src="images/three.png" alt="" />
               <div className="absolute bottom-10  left-10 items-center">
                 <h3 className="text-white font-semibold text-2xl">
@@ -65,7 +65,7 @@ export const SubCategory = () => {
             </div>
           </div>
           <div>
-            <div className="relative  mt-5">
+            <div className="relative  mt-5 md:mt-0">
               <img src="images/four.png" alt="" />
               <div className="absolute bottom-10 left-10 items-center">
                 <h3 className="text-white font-semibold text-2xl">
