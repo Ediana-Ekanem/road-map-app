@@ -1,0 +1,58 @@
+export const Data = [
+  {
+    id: 1,
+    image: "/images/cat2.png",
+    title: "96 Nuptse Dip Dye Korea Puffers",
+    type: "Jacket",
+    amount: "400.0",
+  },
+  {
+    id: 2,
+    image: "/images/cat1.png",
+    title: "Paradigm Chilliwack Black Label ",
+    type: "Jacket",
+    amount: "349.99",
+  },
+  {
+    id: 3,
+    image: "/images/cardz.png",
+    title: "1996 Retro Nuptse Jacket in ",
+    type: "Black",
+    amount: "149.99",
+  },
+  {
+    id: 4,
+    image: "/images/cardx.png",
+    title: "Paul Quilted Nylon Puffer bomber",
+    type: "Jacket",
+    amount: 300.0,
+  },
+  {
+    id: 5,
+    image: "/images/cat5.png",
+    title: "Chilliwack jacket Bomber ",
+    type: "HUMANATURE",
+    amount: "1,195",
+  },
+  {
+    id: 6,
+    image: "/images/cat2.png",
+    title: "96 Nuptse Dip Dye Korea Puffers",
+    type: "Jacket",
+    amount: "400.0",
+  },
+  {
+    id: 7,
+    image: "/images/cat1.png",
+    title: "Paradigm Chilliwack Black Label ",
+    type: "Jacket",
+    amount: "349.99",
+  },
+  {
+    id: 8,
+    image: "/images/cardz.png",
+    title: "1996 Retro Nuptse Jacket in ",
+    type: "Black",
+    amount: "149.99",
+  },
+];

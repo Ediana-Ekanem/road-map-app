@@ -12,7 +12,7 @@ function Navbar() {
     <>
       <header className="bg-white py-6 font-[Space Grotesk] shadow sticky top-0 ">
         <Container>
-          <nav className="flex justify-between items-center  ">
+          <nav className="flex justify-between items-center">
             <span className="icon md:hidden" onClick={toggleMenu}>
               <ion-icon
                 name={showMenu ? "close" : "menu"}
