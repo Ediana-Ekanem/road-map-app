@@ -8,6 +8,7 @@ const TrendingBrands = () => {
         <h1 className="text-neutral-900 text-xl font-semibold font-['Inter'] leading-loose text-center">
           Tending Brands
         </h1>
+        {/* Todo: revamp this to be a map instead of multiple image tags  */}
         <div className="flex space-x-5 justify-center items-center ">
           <img src="/icons/logo 01.png" alt="" />
           <img src="/icons/logo 02.png" alt="" />

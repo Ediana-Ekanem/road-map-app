@@ -11,7 +11,8 @@ export const ProductCard = ({ image, title, type, amount }) => {
 
       <div className="flex flex-col  space-y-2 w-[250px]">
         <div className="w-[230px] h-[349px]">
-          <img className="w-full h-full" src={image} alt="category image" />
+          {/* todo: make the image not squeezed with object-fit:cover */}
+          <img className="w-full h-full " src={image} alt="category image" />
         </div>
         <div className="flex space-x-1">
           <img src="/icons/Star Fill.png" alt="star icon" />
