@@ -1,6 +1,6 @@
 import React from "react";
 
-const JustInProp = ({ image, title, type, amount }) => {
+export const ProductCard = ({ image, title, type, amount }) => {
   return (
     <div className="relative">
       <div>
@@ -27,5 +27,3 @@ const JustInProp = ({ image, title, type, amount }) => {
     </div>
   );
 };
-
-export default JustInProp;

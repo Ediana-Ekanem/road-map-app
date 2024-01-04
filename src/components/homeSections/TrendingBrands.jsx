@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container";
 
-export const TrendingBrands = () => {
+const TrendingBrands = () => {
   return (
     <div className="my-10">
       <Container>
@@ -20,3 +20,5 @@ export const TrendingBrands = () => {
     </div>
   );
 };
+
+export default TrendingBrands;

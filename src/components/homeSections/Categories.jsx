@@ -1,16 +1,15 @@
-import React, { useState } from "react";
 import Container from "../Container";
-import { SubCategory } from "./SubCategory";
+import { SubCategory } from "../SubCategory";
 
-export const Categories = () => {
-  const [cat, setCat] = useState([
+const Categories = () => {
+  const cat = [
     { id: 1, img: "/images/cat6.png", title: "Puffers" },
     { id: 2, img: "/images/cat1.png", title: "Bombers" },
     { id: 3, img: "/images/cat2.png", title: "Lightweight jackets" },
     { id: 4, img: "/images/cat3.png", title: "Gilets" },
     { id: 5, img: "/images/cat4.png", title: "Coats" },
     { id: 6, img: "/images/cat5.png", title: "Rainwears" },
-  ]);
+  ];
   return (
     <div>
       <Container>
@@ -34,3 +33,4 @@ export const Categories = () => {
     </div>
   );
 };
+export default Categories;
