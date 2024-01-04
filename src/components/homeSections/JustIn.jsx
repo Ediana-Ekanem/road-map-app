@@ -8,8 +8,7 @@ const JustIn = () => {
     <div>
       <Container>
         <h2 className="font-bold text-3xl mt-5 mb-10">Just In</h2>
-        {/* todo: it shouldn't scroll the whole screen sideways, it should be scrollable within the container. HINT: use overflow-x */}
-        <div className="flex space-x-5">
+        <div className="flex space-x-5 overflow-x-auto whitespace-no-wrap">
           {Data.map((item) => (
             <ProductCard
               key={item.id}
