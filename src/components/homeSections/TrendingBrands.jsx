@@ -35,7 +35,7 @@ const TrendingBrands = () => {
           Tending Brands
         </h1>
 
-        <div className="flex space-x-5 justify-center items-center ">
+        <div className="flex space-x-5 justify-center items-center overflow-x-auto whitespace-no-wrap ">
           {brandImgs.map((item, index) => (
             <img key={item.id} src={item.image} alt={`Brand ${index + 1}`} />
           ))}
