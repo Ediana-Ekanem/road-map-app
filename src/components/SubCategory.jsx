@@ -25,21 +25,27 @@ export const SubCategory = () => {
   ];
   return (
     <div>
-      <div className="flex  justify-center items-center space-x-1 mt-20">
-        <div className="grid md:grid-cols-2 gap-2">
+      <div className="flex justify-center items-center space-x-1 mt-20">
+        <div className="grid md:grid-cols-2 gap-5 w-full">
           {subCat.map((item) => (
-            <div className="relative" key={item.id}>
-              <img src={item.image} alt="" />
+            <div className="relative w-full h-[664px]" key={item.id}>
+              <img
+                src={item.image}
+                alt=""
+                className="w-full h-full object-cover"
+              />
               <div className="absolute bottom-10  left-10 items-center">
                 <h3 className="text-white font-semibold text-2xl">
                   {item.title}
                 </h3>
                 <div className="flex items-center border-b border-white w-[75px] space-x-1 ">
-                  <img
-                    className="w-[60px]"
-                    src="/icons/Get started.png"
-                    alt=""
-                  />
+                  <div className="w-[60px]">
+                    <img
+                      className="w-full h-full object-cover"
+                      src="/icons/Get started.png"
+                      alt=""
+                    />
+                  </div>
                   <img className="w-4" src="/icons/arrow-right.png" alt="" />
                 </div>
               </div>

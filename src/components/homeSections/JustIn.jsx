@@ -16,6 +16,8 @@ const JustIn = () => {
               title={item.title}
               type={item.type}
               amount={item.amount}
+              // cartButton={item.cartButton}
+              justIn={true}
             />
           ))}
         </div>
