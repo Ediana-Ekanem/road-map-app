@@ -28,6 +28,9 @@ export const ProductCard = ({ image, title, type, amount }) => {
         <p className="font-semibold">{title}</p>
         <p className="font-semibold">{type}</p>
         <p className="font-semibold">${amount}</p>
+        <button className="bg-black text-white px-6 py-2 rounded-lg">
+          Add to cart
+        </button>
       </div>
     </div>
   );
