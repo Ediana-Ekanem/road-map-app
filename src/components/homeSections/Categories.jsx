@@ -13,7 +13,7 @@ const Categories = () => {
   return (
     <div>
       <Container>
-        <h2 className="text-center text-4xl font-semibold mt-20 mb-10">
+        <h2 className="text-center text-4xl font-semibold mb-10">
           Shop by Categories
         </h2>
         <div className="flex flex-wrap justify-center ">
