@@ -13,28 +13,28 @@ function Navbar() {
       <header className="bg-white py-6 font-[Space Grotesk] shadow sticky top-0 ">
         <Container>
           <nav className="flex justify-between items-center">
-            <span className="icon md:hidden" onClick={toggleMenu}>
-              <ion-icon
-                name={showMenu ? "close" : "menu"}
-                className="text-3xl cursor-pointer"
-              ></ion-icon>
+            <span
+              className="icon md:hidden text-3xl cursor-pointer"
+              onClick={toggleMenu}
+            >
+              <ion-icon name={showMenu ? "close" : "menu"}></ion-icon>
             </span>
-            <div className="mr-[180px] md:mr-0">
-              <img className="w-13" src="/icons/3legant..png" alt="Logo" />
+            <div className="mr-36 w-[70px] lg:w-[100px]">
+              <img className="w-full" src="/icons/3legant..png" alt="Logo" />
             </div>
             <div
               className={`nav-links ${
                 showMenu ? "" : "hidden"
-              } md:block duration-200 md:static absolute rounded bg-white shadow-md md:shadow-none px-[50px] mt- md:mt-0 md:mr-6 py-7 md:py-0 md:my-0 md:min-h-fit min-h-[40vh] left-0 top-[9%] flex items-center`}
+              } md:block duration-200 md:static absolute mt-[60px] rounded bg-white shadow-md md:shadow-none px-[50px]  md:mt-0 md:mr-6 py-7 md:py-0 md:my-0 md:min-h-fit min-h-[30vh] left-0 top-[9%] flex items-center`}
             >
-              <ul className="flex md:flex-row flex-col md:items-center space-x-10 space-y-10 md:space-y-0 font-[Space Grotesk]">
+              <ul className="flex md:flex-row flex-col md:items-center space-x-10 space-y-8 md:space-y-0 font-[Space Grotesk]">
                 <li className="ml-[40px]">
-                  <a className="hover:text-blue-500" href="#">
+                  <a className="hover:text-blue-500 text-[16px]" href="#">
                     Home
                   </a>
                 </li>
                 <li className="flex items-center">
-                  <a className="hover:text-blue-500" href="#">
+                  <a className="hover:text-blue-500 text-[16px]" href="#">
                     Shop
                   </a>
                   <img
@@ -44,7 +44,7 @@ function Navbar() {
                   />
                 </li>
                 <li className="flex items-center">
-                  <a className="hover:text-blue-500" href="#">
+                  <a className="hover:text-blue-500 text-[16px]" href="#">
                     Product
                   </a>
                   <img
@@ -54,7 +54,7 @@ function Navbar() {
                   />
                 </li>
                 <li>
-                  <a className="hover:text-blue-500" href="#">
+                  <a className="hover:text-blue-500 text-[16px]" href="#">
                     Contact
                   </a>
                 </li>
