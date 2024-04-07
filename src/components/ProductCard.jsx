@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./shared/button";
 
 export const ProductCard = ({ image, title, type, amount }) => {
   return (
@@ -26,9 +27,14 @@ export const ProductCard = ({ image, title, type, amount }) => {
             <img src="/icons/Star Fill.png" alt="star icon" />
           </div>
           <p className="font-semibold text-sm">{type}</p>
-          <button className="bg-black text-sm text-white px-6 py-2 mt-2 rounded-lg w-[70%] absolute bottom-4 left-0 right-0 mx-auto">
+          <Button
+            width={"md"}
+            color="black"
+            isRounded="md"
+            className="mt-2 absolute bottom-4 left-0 right-0 mx-auto"
+          >
             Add to cart
-          </button>
+          </Button>
         </div>
       </div>
     </div>
