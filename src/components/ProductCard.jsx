@@ -1,5 +1,5 @@
 import React from "react";
-import CartButton from "./CartButton";
+import Button from "./shared/button";
 
 export const ProductCard = ({
   image,
@@ -10,38 +10,39 @@ export const ProductCard = ({
   justIn,
 }) => {
   return (
-    <div className="relative mb-10">
-      <div>
-        <p className=" bg-white rounded absolute top-3 left-3 px-2 font-bold">
-          New
-        </p>
-      </div>
+    <div className="relative h-[500px] mt-8 mb-24 rounded-lg hover:shadow-2xl hover:scale-105 transition">
+      <p className=" bg-white text-sm rounded absolute top-3 left-3 px-2 font-semibold">
+        New
+      </p>
 
-      <div className="flex flex-col  space-y-2 w-[250px]">
-        <div className="w-[230px] h-[349px]">
+      <div className=" w-[250px]">
+        <div className="aspect-[4/5]">
           <img
-            className="w-full h-full object-cover  "
+            className="w-full h-full object-cover rounded-t-lg"
             src={image}
             alt="category image"
           />
-
-          {/* Add Cart Button Here  */}
-          {justIn && (
-            <div class="flex justify-center">
-              <CartButton />
-            </div>
-          )}
         </div>
-        <div className="flex space-x-1">
-          <img src="/icons/Star Fill.png" alt="star icon" />
-          <img src="/icons/Star Fill.png" alt="star icon" />
-          <img src="/icons/Star Fill.png" alt="star icon" />
-          <img src="/icons/Star Fill.png" alt="star icon" />
-          <img src="/icons/Star Fill.png" alt="star icon" />
+        <div className="px-2 py-4 h-full">
+          <p className="font-semibold text-xl">${amount}</p>
+          <p className="font-medium text-gray truncate">{title}</p>
+          <div className="flex space-x-1 my-2">
+            <img src="/icons/Star Fill.png" alt="star icon" />
+            <img src="/icons/Star Fill.png" alt="star icon" />
+            <img src="/icons/Star Fill.png" alt="star icon" />
+            <img src="/icons/Star Fill.png" alt="star icon" />
+            <img src="/icons/Star Fill.png" alt="star icon" />
+          </div>
+          <p className="font-semibold text-sm">{type}</p>
+          <Button
+            width={"md"}
+            color="black"
+            isRounded="md"
+            className="mt-2 absolute bottom-4 left-0 right-0 mx-auto"
+          >
+            Add to cart
+          </Button>
         </div>
-        <p className="font-semibold">{title}</p>
-        <p className="font-semibold">{type}</p>
-        <p className="font-semibold">${amount}</p>
       </div>
     </div>
   );

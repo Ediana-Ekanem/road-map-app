@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function Hero() {
   return (
@@ -21,9 +22,13 @@ function Hero() {
               Everyone needs a good winter jacket. Find yours with our
               collection and more.
             </p>
-            <button className=" bg-blue-500 hover:bg-blue-700 text-black md:text-white font-medium py-2 px-8 rounded mt-5">
+            {/* <button className=" bg-blue-500 hover:bg-blue-700 text-black md:text-white font-medium py-2 px-8 rounded mt-5">
               Shopping Now
-            </button>
+            </button> */}
+            <Button
+              text="Shopping Now"
+              className="bg-blue-500 hover:bg-blue-700 text-black md:text-white font-medium py-2 px-8 rounded mt-5"
+            />
           </div>
         </div>
       </div>

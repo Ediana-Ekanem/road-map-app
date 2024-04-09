@@ -8,7 +8,7 @@ const JustIn = () => {
     <div>
       <Container>
         <h2 className="font-bold text-3xl mt-5 mb-10">Just In</h2>
-        <div className="flex space-x-5 overflow-x-auto whitespace-no-wrap">
+        <div className="flex space-x-8 overflow-x-auto whitespace-no-wrap px-4">
           {Data.map((item) => (
             <ProductCard
               key={item.id}
