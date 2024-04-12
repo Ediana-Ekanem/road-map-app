@@ -39,6 +39,8 @@ export const ProductCard = ({
             color="black"
             isRounded="md"
             className="mt-2 absolute bottom-4 left-0 right-0 mx-auto"
+            onClick={() => console.log("You clicked me")}
+            loading={false}
           >
             Add to cart
           </Button>

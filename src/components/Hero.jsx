@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "./shared/button";
 
 function Hero() {
   return (
@@ -25,10 +25,17 @@ function Hero() {
             {/* <button className=" bg-blue-500 hover:bg-blue-700 text-black md:text-white font-medium py-2 px-8 rounded mt-5">
               Shopping Now
             </button> */}
-            <Button
+            {/* <Button
               text="Shopping Now"
               className="bg-blue-500 hover:bg-blue-700 text-black md:text-white font-medium py-2 px-8 rounded mt-5"
-            />
+            /> */}
+            <Button
+              color="blue"
+              isRounded="md"
+              className="font-medium text-black md:text-white hover:bg-blue-700"
+            >
+              Shopping Now
+            </Button>
           </div>
         </div>
       </div>
