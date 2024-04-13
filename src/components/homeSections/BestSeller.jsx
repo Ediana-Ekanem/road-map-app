@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../Container";
-import { Data } from "../../NewArrivals";
+import { Data } from "../data/NewArrivals";
 import { ProductCard } from "../ProductCard";
 
 const BestSeller = () => {

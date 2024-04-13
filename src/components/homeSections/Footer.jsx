@@ -129,11 +129,7 @@ const Footer = () => {
                 />
               </div>
               <div className="w-10 h-10 mt-3">
-                <img
-                  src="/public/icons/footerIcons/Stripe.png"
-                  className=""
-                  alt=""
-                />
+                <img src="/icons/footerIcons/Stripe.png" className="" alt="" />
               </div>
               <div className="w-10 h-10">
                 <img

@@ -1,6 +1,6 @@
 import React from "react";
 import { ProductCard } from "../ProductCard";
-import { Data } from "../../NewArrivals";
+import { Data } from "../data/NewArrivals.js";
 import Container from "../Container";
 
 const JustIn = () => {
