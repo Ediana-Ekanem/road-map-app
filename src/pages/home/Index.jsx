@@ -8,7 +8,7 @@ import NewsFeed from "../../components/NewsFeed";
 
 function Index() {
   return (
-    <div>
+    <>
       <Header />
       <TrendingBrands />
       <JustIn />
@@ -16,7 +16,7 @@ function Index() {
       <BestSeller />
       <NewsFeed />
       <Footer />
-    </div>
+    </>
   );
 }
 

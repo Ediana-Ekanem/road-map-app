@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="bg-white py-6 font-[Space Grotesk] shadow sticky top-0 ">
+      <header className="bg-white py-6 font-[Space Grotesk] shadow sticky top-0 z-[1000] ">
         <Container>
           <nav className="flex justify-between items-center">
             <span

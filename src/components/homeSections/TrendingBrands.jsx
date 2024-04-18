@@ -29,19 +29,21 @@ const TrendingBrands = () => {
     },
   ];
   return (
-    <div className="my-10">
-      <Container>
-        <h1 className="text-neutral-900 text-xl font-semibold font-['Inter'] leading-loose text-center">
-          Tending Brands
-        </h1>
+    <>
+      <div className="my-10">
+        <Container>
+          <h1 className="text-neutral-900 text-xl font-semibold font-['Inter'] leading-loose text-center">
+            Tending Brands
+          </h1>
 
-        <div className="flex space-x-5 justify-center items-center overflow-x-auto whitespace-no-wrap ">
-          {brandImgs.map((item, index) => (
-            <img key={item.id} src={item.image} alt={`Brand ${index + 1}`} />
-          ))}
-        </div>
-      </Container>
-    </div>
+          <div className="flex space-x-5 justify-center items-center overflow-x-auto whitespace-no-wrap ">
+            {brandImgs.map((item, index) => (
+              <img key={item.id} src={item.image} alt={`Brand ${index + 1}`} />
+            ))}
+          </div>
+        </Container>
+      </div>
+    </>
   );
 };
 

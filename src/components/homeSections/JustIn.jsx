@@ -5,7 +5,7 @@ import Container from "../Container";
 
 const JustIn = () => {
   return (
-    <div>
+    <>
       <Container>
         <h2 className="font-bold text-3xl mt-5 mb-10">Just In</h2>
         <div className="flex space-x-8 overflow-x-auto whitespace-no-wrap px-4">
@@ -22,7 +22,7 @@ const JustIn = () => {
           ))}
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 export default JustIn;

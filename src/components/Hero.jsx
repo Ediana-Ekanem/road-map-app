@@ -3,7 +3,7 @@ import Button from "./shared/button";
 
 function Hero() {
   return (
-    <div>
+    <>
       <div className="md:flex">
         <div className="flex-1">
           <img
@@ -39,7 +39,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
