@@ -11,7 +11,7 @@ const Categories = () => {
     { id: 6, img: "/images/cat5.png", title: "Rainwears" },
   ];
   return (
-    <div>
+    <>
       <Container>
         <h2 className="text-center text-4xl font-semibold mb-10">
           Shop by Categories
@@ -30,7 +30,7 @@ const Categories = () => {
         </div>
         <SubCategory />
       </Container>
-    </div>
+    </>
   );
 };
 export default Categories;

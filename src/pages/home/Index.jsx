@@ -5,15 +5,57 @@ import JustIn from "../../components/homeSections/JustIn";
 import BestSeller from "../../components/homeSections/BestSeller";
 import Footer from "../../components/homeSections/Footer";
 import NewsFeed from "../../components/NewsFeed";
+import { useContext } from "react";
+import { CartContext } from "../../store/CartProvider";
+import Modal from "../../components/Modal";
 
 function Index() {
+  const { cart, setCart, warning, setWarning, showModal, setShowModal } =
+    useContext(CartContext);
+
+  const handleClick = (item) => {
+    let isPresent = false; //This variable will be used to track whether the item is already present in the cart.
+    cart.forEach((product) => {
+      if (item.id === product.id) isPresent = true;
+    });
+    if (isPresent) {
+      setWarning(true);
+      setTimeout(() => {
+        setWarning(false);
+      }, 2000);
+      return;
+    }
+
+    setCart([...cart, item]);
+  };
+
+  const handleCount = (item, d) => {
+    let ind = -1;
+    cart.forEach((data, index) => {
+      if (data.id === item.id) ind = index;
+    });
+
+    const tempArr = cart;
+    tempArr[ind].numAvailable += d;
+    if (tempArr[ind].numAvailable == 0) tempArr[ind].numAvailable = 1;
+    setCart([...tempArr]);
+  };
   return (
     <>
-      <Header />
+      <Header setShowModal={setShowModal} />
+      <div className="relative">
+        {warning && (
+          <div className="bg-red-600 text-white text-center p-4 rounded-lg shadow-md z-20 fixed top-0 left-0 w-full">
+            <h1> Item is already added to your cart</h1>
+          </div>
+        )}
+      </div>
+
+      {showModal && <Modal handleCount={handleCount} />}
       <TrendingBrands />
-      <JustIn />
+      <JustIn handleClick={handleClick} />
       <Categories />
-      <BestSeller />
+      <BestSeller handleClick={handleClick} />
       <NewsFeed />
       <Footer />
     </>

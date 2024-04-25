@@ -3,7 +3,7 @@ import { ProductCard } from "../ProductCard";
 import { Data } from "../data/NewArrivals.js";
 import Container from "../Container";
 
-const JustIn = () => {
+const JustIn = ({ handleClick }) => {
   return (
     <>
       <Container>
@@ -12,12 +12,16 @@ const JustIn = () => {
           {Data.map((item) => (
             <ProductCard
               key={item.id}
-              image={item.image}
-              title={item.title}
-              type={item.type}
-              amount={item.amount}
+              item={item}
+              // onClick={onClick}
+              handleClick={handleClick}
+              // image={item.image}
+              // title={item.title}
+              // type={item.type}
+              // amount={item.amount}
+
               // cartButton={item.cartButton}
-              justIn={true}
+              // justIn={true}
             />
           ))}
         </div>

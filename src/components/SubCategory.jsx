@@ -24,7 +24,7 @@ export const SubCategory = () => {
     },
   ];
   return (
-    <div>
+    <>
       <div className="flex justify-center items-center space-x-1 mt-20">
         <div className="grid md:grid-cols-2 gap-5 w-full">
           {subCat.map((item) => (
@@ -53,6 +53,6 @@ export const SubCategory = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };

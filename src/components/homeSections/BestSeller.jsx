@@ -3,7 +3,7 @@ import Container from "../Container";
 import { Data } from "../data/NewArrivals";
 import { ProductCard } from "../ProductCard";
 
-const BestSeller = () => {
+const BestSeller = ({ handleClick }) => {
   return (
     <>
       <div className="py-20">
@@ -16,11 +16,13 @@ const BestSeller = () => {
               {Data.map((item) => (
                 <ProductCard
                   key={item.id}
-                  image={item.image}
-                  title={item.title}
-                  type={item.type}
-                  amount={item.amount}
-                  cartButton={item.cartButton}
+                  item={item}
+                  handleClick={handleClick}
+                  // image={item.image}
+                  // title={item.title}
+                  // type={item.type}
+                  // amount={item.amount}
+                  // cartButton={item.cartButton}
                 />
               ))}
             </div>

@@ -4,15 +4,19 @@ import Container from "./Container";
 const NewsFeed = () => {
   const newsFeedImgs = [
     {
+      id: 1,
       img: "/images//newFeedImg/Image1.png",
     },
     {
+      id: 2,
       img: "/images/newFeedImg/Image2.png",
     },
     {
+      id: 3,
       img: "/images/newFeedImg/Image3.png",
     },
     {
+      id: 4,
       img: "/images/newFeedImg/Paste image.png",
     },
   ];
@@ -43,7 +47,7 @@ const NewsFeed = () => {
     },
   ];
   return (
-    <div>
+    <>
       <Container>
         <div className="py-10">
           <div className=" text-center mx-auto font-[Poppins]">
@@ -56,7 +60,10 @@ const NewsFeed = () => {
           </div>
           <div className=" md:flex  justify-center md:space-x-5 mt-5 ">
             {newsFeedImgs.map((data) => (
-              <div className="mb-3 md:mb-0  flex items-center justify-center">
+              <div
+                key={data.id}
+                className="mb-3 md:mb-0  flex items-center justify-center"
+              >
                 <div className="w-[200px] h-[200px]">
                   <img
                     src={data.img}
@@ -71,7 +78,10 @@ const NewsFeed = () => {
           <div className="flex justify-center">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-10  md:gap-4">
               {newsFeedData.map((data) => (
-                <div className=" w-[100px] h-[100px] md:w-[200px] md:h-[200px] mt-5 md:mt-10 font-[Poppins]  md:block  md:px-7 ">
+                <div
+                  key={data.title}
+                  className=" w-[100px] h-[100px] md:w-[200px] md:h-[200px] mt-5 md:mt-10 font-[Poppins]  md:block  md:px-7 "
+                >
                   <div className="w-[30px] h-[30px] mb-2">
                     <img
                       src={data.icon}
@@ -91,7 +101,7 @@ const NewsFeed = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 
