@@ -9,7 +9,7 @@ const Modal = ({ handleCount }) => {
 
   const handlePrice = () => {
     let ans = 0;
-    cart.map((item) => (ans += item.numAvailable * item.amount));
+    cart.forEach((item) => (ans += item.numAvailable * item.amount));
     setAmount(ans);
   };
 
@@ -93,7 +93,7 @@ const Modal = ({ handleCount }) => {
 
         <div className=" text-center space-x-5 text-xl py-3">
           <span className=" font-bold">Total Price of your Cart</span>
-          <span className="text-green-500 font-bold">₦ - {amount}</span>
+          <span className="text-green-500 font-bold">₦{amount}</span>
         </div>
       </div>
     </div>,

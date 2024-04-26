@@ -14,10 +14,12 @@ function Index() {
     useContext(CartContext);
 
   const handleClick = (item) => {
+    // check if added or not
     let isPresent = false; //This variable will be used to track whether the item is already present in the cart.
     cart.forEach((product) => {
       if (item.id === product.id) isPresent = true;
     });
+
     if (isPresent) {
       setWarning(true);
       setTimeout(() => {
@@ -25,7 +27,6 @@ function Index() {
       }, 2000);
       return;
     }
-
     setCart([...cart, item]);
   };
 
@@ -37,15 +38,15 @@ function Index() {
 
     const tempArr = cart;
     tempArr[ind].numAvailable += d;
-    if (tempArr[ind].numAvailable == 0) tempArr[ind].numAvailable = 1;
+    if (tempArr[ind].numAvailable === 0) tempArr[ind].numAvailable = 1;
     setCart([...tempArr]);
   };
   return (
     <>
       <Header setShowModal={setShowModal} />
-      <div className="relative">
+      <div className="relative top-0 ">
         {warning && (
-          <div className="bg-red-600 text-white text-center p-4 rounded-lg shadow-md z-20 fixed top-0 left-0 w-full">
+          <div className="bg-orange-500 text-white text-center p-4 rounded-lg shadow-md z-20 fixed font-bold top-0 right-0 w-96">
             <h1> Item is already added to your cart</h1>
           </div>
         )}

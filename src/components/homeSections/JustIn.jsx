@@ -13,8 +13,8 @@ const JustIn = ({ handleClick }) => {
             <ProductCard
               key={item.id}
               item={item}
-              // onClick={onClick}
               handleClick={handleClick}
+              // onClick={onClick}
               // image={item.image}
               // title={item.title}
               // type={item.type}

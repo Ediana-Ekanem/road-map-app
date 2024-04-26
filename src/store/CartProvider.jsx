@@ -8,7 +8,6 @@ const CartProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
 
   // const [show, setShow] = useState(true);
-
   return (
     <CartContext.Provider
       value={{ cart, setCart, warning, setWarning, showModal, setShowModal }}
